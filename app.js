@@ -17,7 +17,29 @@ const render = require("./lib/htmlRenderer");
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
+const engagementTeam = [];
 
+const confirmName = async (name) => {
+    if (name === '') {
+        return 'incorrect answer';
+    };
+    return true;
+};
+
+const confirmNumber = async (name) => {
+    if (name === '') {
+        return 'incorrect answer';
+    };
+    return true;
+};
+
+function validateEmail(name)
+{if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(name))
+  {
+    return (true)
+  }
+    return("You have entered an invalid email address!")
+}
 // After you have your html, you're now ready to create an HTML file using the HTML
 // returned from the `render` function. Now write it to a file named `team.html` in the
 // `output` folder. You can use the variable `outputPath` above target this location.
