@@ -40,6 +40,38 @@ function validateEmail(name)
   }
     return("You have entered an invalid email address!")
 }
+
+function teamMember() {
+
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "What is your manager's name?",
+            name: "name",
+            validate: confirmName
+        },
+        {
+            type: "input",
+            message: "What is your manager's id?",
+            name: "id",
+            validate: confirmNumber
+        }, 
+        {
+            type: "input",
+            message: "What is your manager's email?",
+            name: "email",
+            validate: validateEmail
+        },
+        {
+            type: "input",
+            message: "What is your manager's office number?",
+            name: "office number",
+            validate: confirmNumber
+        }, 
+    ])
+
+    
+}
 // After you have your html, you're now ready to create an HTML file using the HTML
 // returned from the `render` function. Now write it to a file named `team.html` in the
 // `output` folder. You can use the variable `outputPath` above target this location.
