@@ -5,5 +5,5 @@ I used Html, javasript, css and node.js
 
 https://drive.google.com/file/d/1JDpH9TD9-ZssO7hgJ4PyOpCZiIUVRivi/view
 
-<img width="1280" alt="team generator Screenshot" src="https://user-images.githubusercontent.com/70412016/99884390-30be0300-2beb-11eb-9f3a-66c32a13de02.png">
+<img width="1280" alt="Screenshot team gen" src="https://user-images.githubusercontent.com/70412016/99884447-8e524f80-2beb-11eb-8293-ed623e2b3d5b.png">
 
