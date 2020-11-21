@@ -78,6 +78,47 @@ function teamMember() {
         .catch(function(err) {
             console.log(err);
         });
+    async function chooseMemberNext() {
+        try {
+            let teamChoice = await inquirer.prompt([
+                {
+                    type: 'list',
+                    name: 'team',
+                    message: 'Which type of team member would you like to add',
+                    choices: ['Engineer', 'Intern', 'I don/t want to add anymore team members.']
+                }
+            ]);
+            if (teamChoice.team === 'Engineer') {
+                inquirer.prompt([
+                    {
+                        type: "input",
+                        message: "What is your engineer's name?",
+                        name: "name",
+                        validate: confirmName
+                    },
+                    {
+                        type: "input",
+                        message: "What is your engineer's id?",
+                        name: "id",
+                        validate: confirmNumber
+                    },
+                    {
+                        type: "input",
+                        message: "What is your engineer's email?",
+                        name: "email",
+                        validate: validateEmail
+                    },
+                    {
+                        type: "input",
+                        message: "What is your engineer's GitHub username?",
+                        name: "GitHub",
+                        validate: confirmName
+                    }
+                ])
+                
+            }
+        }
+    }
 
     
 
